@@ -1,8 +1,12 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { add } from './add.js';
+import expect from 'expect';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('add()', () => {
+  it('adds two numbers', () => {
+    expect(add(2, 3)).toEqual(5);
+  });
+
+  it('doesnt add the third number', () => {
+    expect(add(2, 3, 5)).toEqual(add(2, 3));
+  });
 });

@@ -1,4 +1,4 @@
-import { isPrime } from '../utils';
+import { isPrime } from '../utils/utils';
 import styled from 'styled-components';
 import UserCard from './UserCard';
 
