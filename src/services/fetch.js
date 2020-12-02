@@ -6,6 +6,7 @@ export const uris = {
 /**
  * Function to make api calls using get method and axios Api
  * @param {String} url 
+ * @returns {Object}
  */
 export const get = async (url) => {
   try {

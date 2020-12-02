@@ -3,6 +3,7 @@
  * @param {Number} n 
  * @param {Number} divCount 
  * @param {Number} i 
+ * @returns {Boolean}
  */
 export const isPrime = (n, divCount = 0, i = 0) => {
   if (n % i === 0) {
@@ -15,19 +16,22 @@ export const isPrime = (n, divCount = 0, i = 0) => {
  * Checks if a string contains another string
  * @param {String} str1 
  * @param {String} str2 
+ * @returns {Boolean}
  */
 export const includesString = (str1, str2) => str1.toLowerCase().includes(str2.toLowerCase());
 
 /**
  * Checks if a string it's empty
- * @param {String} str 
+ * @param {String} str
+ * @returns {Boolean} 
  */
 export const isEmpty = (str) => str === '';
 
 /**
  * Checks if there is any filter and if so filters the user array to display
  * @param {Object} filters 
- * @param {Array} users 
+ * @param {Array} users
+ * @returns {Array} 
  */
 export const checkFilters = (filters, users) => {
   if (
@@ -47,6 +51,7 @@ export const checkFilters = (filters, users) => {
  * Checks if there is any city on filters cities array
  * @param {Object} filters 
  * @param {Array} users 
+ * @returns {Array}
  */
 const checkCities = (filters, users) => {
   return filters.cities.length > 0 ? users.filter(user => filters.cities.find(city => city === user.address.city)) : users

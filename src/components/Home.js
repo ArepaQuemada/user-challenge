@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from 'react';
 import { FiltersContext, initialStateFilters } from '../context/FilterContext';
 import { checkFilters } from '../utils/utils';
-import { get, uris } from '../api/fetch';
+import { get, uris } from '../services/fetch';
 import styled from 'styled-components';
 import Form from './Form';
 import { ToastContainer, toast } from 'react-toastify';
