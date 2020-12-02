@@ -1,6 +1,6 @@
 import { useState, useEffect, useContext } from 'react';
 import { FiltersContext, initialStateFilters } from '../context/FilterContext';
-import { checkFilters, isEmpty } from '../utils';
+import { checkFilters } from '../utils';
 import { get, uris } from '../api/fetch';
 import styled from 'styled-components';
 import Form from './Form';
