@@ -10,7 +10,9 @@ const Container = styled.div`
 const Wrapper = styled.main`
   padding: 1rem;
 `;
-
+/**
+ * App component
+ */
 export default function App() {
   return (
     <Container>

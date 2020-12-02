@@ -7,7 +7,10 @@ const Wrapper = styled.div`
   color: #FFF;
   border-radius: 10px;
 `;
-
+/**
+ * Little container displayed on top when a city button it's clicked
+ * @param {String} filterName 
+ */
 export default function FilterButton({ filterName }) {
   return <Wrapper id="filter-name">{filterName}</Wrapper>;
 }

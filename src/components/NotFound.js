@@ -23,6 +23,9 @@ const Text = styled.p`
   font-weight: bold;
 `;
 
+/**
+ * Component to display an image when no user it's found 
+ */
 export default function NotFound() {
   return (
     <Wrapper>

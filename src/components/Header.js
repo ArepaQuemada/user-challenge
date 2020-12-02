@@ -12,6 +12,9 @@ const Banner = styled.img`
   fill: blue;
 `;
 
+/**
+ * Header Component
+ */
 export default function Header() {
   return (
     <ImgContainer>

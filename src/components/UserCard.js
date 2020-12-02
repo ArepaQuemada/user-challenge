@@ -63,6 +63,10 @@ const Button = styled.button`
   }
 `;
 
+/**
+ * Card component, here's where the user data it's displayed, also has a filter button by city
+ * @param {*} param
+ */
 export default function UserCard({
   color,
   user: {

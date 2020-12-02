@@ -48,6 +48,11 @@ const Button = styled.button`
   }
 `;
 
+/**
+ * Form component to dispatch state change when typing on inputs or clicked clear button
+ * @param {Function} clearFilters 
+ */
+
 export default function Form({ clearFilters }) {
   const { filters, setfilters } = useContext(FiltersContext);
 

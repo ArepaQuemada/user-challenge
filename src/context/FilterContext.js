@@ -8,6 +8,10 @@ export const initialStateFilters = {
   cities: [],
 };
 
+/**
+ * Global state management provider to handle filters
+ * @param {Object} props 
+ */
 export const FiltersProvider = (props) => {
   const [filters, setfilters] = useState(initialStateFilters);
   return (

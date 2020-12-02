@@ -9,6 +9,10 @@ const UsersWrapper = styled.div`
   margin-top: 3rem;
 `;
 
+/**
+ * Wrapper component to map users
+ * @param {Array} users 
+ */
 export default function Users({users}) {
  
   return (

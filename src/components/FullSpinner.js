@@ -11,7 +11,9 @@ const Container = styled.div`
   left: 0;
   height: 100vh;
 `;
-
+/**
+ * Component to display a full spinner when fetching data
+ */
 export default function FullSpinner() {
   return (
     <Container>

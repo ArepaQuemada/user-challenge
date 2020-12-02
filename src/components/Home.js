@@ -32,7 +32,9 @@ const FiltersWrapper = styled.div`
 `;
 
 const initialState = [];
-
+/**
+ * Main view component, has users filters and loading as state
+ */
 export default function Home() {
   const [ users, setusers ] = useState(initialState);
   const { filters, setfilters } = useContext(FiltersContext);
