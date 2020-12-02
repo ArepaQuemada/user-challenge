@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/user-challenge/static/css/main.2c90ceff.chunk.css",
-    "main.js": "/user-challenge/static/js/main.f0227da9.chunk.js",
-    "main.js.map": "/user-challenge/static/js/main.f0227da9.chunk.js.map",
+    "main.js": "/user-challenge/static/js/main.eda4dbcb.chunk.js",
+    "main.js.map": "/user-challenge/static/js/main.eda4dbcb.chunk.js.map",
     "runtime-main.js": "/user-challenge/static/js/runtime-main.3f18db76.js",
     "runtime-main.js.map": "/user-challenge/static/js/runtime-main.3f18db76.js.map",
     "static/css/2.83342f34.chunk.css": "/user-challenge/static/css/2.83342f34.chunk.css",
@@ -15,13 +15,13 @@
     "static/css/main.2c90ceff.chunk.css.map": "/user-challenge/static/css/main.2c90ceff.chunk.css.map",
     "static/js/2.0c3821b6.chunk.js.LICENSE.txt": "/user-challenge/static/js/2.0c3821b6.chunk.js.LICENSE.txt",
     "static/media/page-not-found-4.b89484ca.png": "/user-challenge/static/media/page-not-found-4.b89484ca.png",
-    "static/media/pattern2.f6272bd1.svg": "/user-challenge/static/media/pattern2.f6272bd1.svg"
+    "static/media/pattern2.87c3737e.svg": "/user-challenge/static/media/pattern2.87c3737e.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.3f18db76.js",
     "static/css/2.83342f34.chunk.css",
     "static/js/2.0c3821b6.chunk.js",
     "static/css/main.2c90ceff.chunk.css",
-    "static/js/main.f0227da9.chunk.js"
+    "static/js/main.eda4dbcb.chunk.js"
   ]
 }
