@@ -9,6 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Users from './Users';
 import NotFound from './NotFound';
 import FilterButton from './FilterButton';
+import FullSpinner from './FullSpinner';
 
 const FiltersContainer = styled.div`
   position: relative;
@@ -33,13 +34,23 @@ const FiltersWrapper = styled.div`
 const initialState = [];
 
 export default function Home() {
-  const [users, setusers] = useState(initialState);
+  const [ users, setusers ] = useState(initialState);
   const { filters, setfilters } = useContext(FiltersContext);
+  const [ loading, setLoading ] = useState(false);
 
   useEffect(() => {
     const fetchUsers = async () => {
-      const { data } = await get(uris.jsonPlaceholder);
-      setusers(data);
+      try {
+        setLoading(true);
+        const { data } = await get(uris.jsonPlaceholder);
+        setusers(data);
+      } catch(error) {
+        console.log(error)
+      } finally {
+        setTimeout(() => {
+          setLoading(false);
+        }, 300);
+      }
     };
     fetchUsers();
   }, []);
@@ -58,6 +69,10 @@ export default function Home() {
   const filterUsers = checkFilters(filters, users);
   
   const checkNotFound = () => filterUsers.length === 0;
+
+  if (loading) {
+    return <FullSpinner />
+  }
 
   return (
     <>
