@@ -9,5 +9,5 @@ const Wrapper = styled.div`
 `;
 
 export default function FilterButton({ filterName }) {
-  return <Wrapper>{filterName}</Wrapper>;
+  return <Wrapper id="filter-name">{filterName}</Wrapper>;
 }

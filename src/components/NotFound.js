@@ -27,9 +27,9 @@ export default function NotFound() {
   return (
     <Wrapper>
       <ImgWrapper>
-        <Image src={notFound}></Image>
+        <Image src={notFound} id="not-found-img"></Image>
       </ImgWrapper>
-      <Text>User not found</Text>
+      <Text id="not-found-text">User not found</Text>
     </Wrapper>
   );
 }
