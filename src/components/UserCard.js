@@ -16,8 +16,7 @@ const CardContainer = styled.div`
 
 const CardHead = styled.div`
   padding: 0.7rem;
-  background-color: ${(props) =>
-    props.color === 'primary' ? '#1ABFEF;' : '#E66BA0;'}
+  background-color: ${(props) => props.color === 'primary' ? '#1ABFEF;' : '#E66BA0;'}
   text-align: center;
   border-radius: 10px 10px 0px 0px;
   color: #f2f2f2;
@@ -75,8 +74,9 @@ export default function UserCard({
     company: { name: companyName, catchPhrase },
   },
 }) {
-  const { setfilters } = useContext(FiltersContext);
 
+  const { setfilters } = useContext(FiltersContext);
+  
   const handleClick = (e) =>
     setfilters((prev) => {
       return {
